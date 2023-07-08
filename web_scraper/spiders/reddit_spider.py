@@ -1,4 +1,3 @@
-```python
 import scrapy
 from scrapy.loader import ItemLoader
 from web_scraper.items import RedditItem
@@ -21,4 +20,3 @@ class RedditSpider(scrapy.Spider):
         next_page = response.css('span.next-button a::attr(href)').get()
         if next_page is not None:
             yield response.follow(next_page, self.parse)
-```
