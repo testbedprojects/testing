@@ -1,4 +1,3 @@
-```python
 from scrapy import Item, Field
 
 class RedditItem(Item):
@@ -6,4 +5,3 @@ class RedditItem(Item):
     url = Field()
     comments = Field()
     upvotes = Field()
-```
